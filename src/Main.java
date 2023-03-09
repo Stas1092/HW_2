@@ -1,21 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        int a = 500; // Начальный счёт.
+        int initialBalance = 500; // Начальный счёт.
 
-        int b = 900; // Сумма пополнения.
+        int replenishmentAmount = 900; // Сумма пополнения.
 
-        int c = (a + b);
+        int finalBalance = (initialBalance + replenishmentAmount);
 
-        if (c > 1000) {
+        if (finalBalance > 1000) {
 
-            int d = ((b / 100) + c);
+            int finalBalanceAndBonus = ((replenishmentAmount / 100) + finalBalance);
 
-            System.out.println("Баланс счёта + бонус: " + d);
+            System.out.println("Баланс счёта + бонус: " + finalBalanceAndBonus);
 
         } else {
 
-            System.out.println("Баланс счёта: " + c);
+            System.out.println("Баланс счёта: " + finalBalance);
 
         }
     }
